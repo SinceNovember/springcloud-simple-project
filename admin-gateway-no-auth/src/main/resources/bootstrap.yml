@@ -1,0 +1,24 @@
+nacos:
+  address: 124.221.237.161:8848
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: admin-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr:  ${nacos.address}
+        group: DEFAULT_GROUP
+        file-extension: yaml
+        namespace: 783ed157-2619-4026-9d31-4f5aa6832c62
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://124.221.237.161:3306/db_oauth2?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: mypassword
+    driver-class-name: com.mysql.jdbc.Driver
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>admin-parent</artifactId>
+        <groupId>com.simple</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../admin-parent/pom.xml</relativePath>
+    </parent>
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>admin-common</artifactId>
+
+    <modules>
+        <module>admin-common-core</module>
+        <module>admin-common-datasource-starter</module>
+        <module>admin-common-mvc-starter</module>
+        <module>admin-common-security-starter</module>
+        <module>admin-common-logging-starter</module>
+    </modules>
+
+
+</project>

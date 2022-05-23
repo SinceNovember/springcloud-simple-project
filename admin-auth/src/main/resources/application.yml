@@ -1,0 +1,30 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: admin-auth
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 124.221.237.161:8848/
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://124.221.237.161:3306/db_oauth2?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: mypassword
+    driver-class-name: com.mysql.jdbc.Driver
+
+  redis:
+    host: 124.221.237.161
+    password: mypassword
+    port: 6379
+    timeout: 3000
+
+
+server:
+  port: 5000
+
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml

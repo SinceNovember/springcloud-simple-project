@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.simple.admin.mvc.starter.configure.AdminMvcAutoConfigure
